@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios - Imadigital Panoramic 3D</title>
+
+  <!-- Iconos Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <!-- CSS general -->
+  <link rel="stylesheet" href="assets/css/styless.css">
+  <!-- AOS animaciones -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="js/script.js" defer></script>
+</head>
+<body class="pagina-servicios">
+
+  <!-- HEADER / MENÚ -->
+  <header class="main-header">
+    <div class="container header-content">
+      <a href="index.html" class="logo-link">
+        <img src="assets/img/logo.png" alt="Logo Imadigital" class="logo">
+      </a>
+      <nav class="nav">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="acerca.html">Acerca de</a></li>
+          <li><a href="servicios.html" class="active">Servicios</a></li>
+          <li><a href="citas.html">Citas</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 data-aos="fade-down">Nuestros Servicios</h1>
+      <p data-aos="fade-up">Conoce los servicios profesionales que ofrecemos en Imadigital Panoramic 3D.</p>
+    </div>
+  </section>
+
+<!-- SECCIÓN DE SERVICIOS -->
+<section class="servicios">
+  <div class="container">
+    <h2 data-aos="fade-down">Servicios que ofrecemos</h2>
+
+<!-- SERVICIOS GRID -->
+<div class="servicios-grid">
+
+  <!-- Radiografía Panorámica -->
+  <div class="servicio-card" data-aos="fade-up" data-aos-delay="100">
+    <img src="assets/img/pano6.jpeg" alt="Radiografía Panoramica">
+    <h3>Radiografía Panorámica</h3>
+    <p>Visualiza toda la dentadura y maxilares para diagnósticos completos y precisos.</p>
+    <div class="servicio-botones">
+      <button type="button" class="btn-info" onclick="abrirInfo('Radiografía Panoramica')">Ver más información</button>
+      <a href="citas.html" class="btn-cita">Solicitar estudio</a>
+      <a href="https://wa.me/50431480676?text=Hola%20quiero%20solicitar%20el%20servicio%20de%20Radiografía%20Panorámica" target="_blank" class="btn-whatsapp">
+        <i class="fab fa-whatsapp"></i> Solicitar por WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <!-- Radiografía Lateral -->
+  <div class="servicio-card" data-aos="fade-up" data-aos-delay="150">
+    <img src="assets/img/lateral3.jpeg" alt="Radiografía Lateral">
+    <h3>Radiografía Lateral</h3>
+    <p>Permite analizar la relación entre maxilar y mandíbula, útil en ortodoncia.</p>
+    <div class="servicio-botones">
+      <button type="button" class="btn-info" onclick="abrirInfo('Radiografía Lateral')">Ver más información</button>
+      <a href="citas.html" class="btn-cita">Solicitar estudio</a>
+      <a href="https://wa.me/50431480676?text=Hola%20quiero%20solicitar%20el%20servicio%20de%20Radiografía%20Lateral" target="_blank" class="btn-whatsapp">
+        <i class="fab fa-whatsapp"></i> Solicitar por WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <!-- Radiografía A.T.M -->
+  <div class="servicio-card" data-aos="fade-up" data-aos-delay="200">
+    <img src="assets/img/atm2.jpeg" alt="Radiografía A.T.M">
+    <h3>Radiografía A.T.M</h3>
+    <p>Estudio especializado para la articulación temporomandibular y sus movimientos.</p>
+    <div class="servicio-botones">
+      <button type="button" class="btn-info" onclick="abrirInfo('Radiografía A.T.M')">Ver más información</button>
+      <a href="citas.html" class="btn-cita">Solicitar estudio</a>
+      <a href="https://wa.me/50431480676?text=Hola%20quiero%20solicitar%20el%20servicio%20de%20Radiografía%20A.T.M" target="_blank" class="btn-whatsapp">
+        <i class="fab fa-whatsapp"></i> Solicitar por WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <!-- Radiografía AP o PA -->
+  <div class="servicio-card" data-aos="fade-up" data-aos-delay="250">
+    <img src="assets/img/pa5.jpeg" alt="Radiografía AP o PA">
+    <h3>Radiografía AP o PA</h3>
+    <p>Estudio anteroposterior o posteroanterior para análisis de estructuras craneofaciales.</p>
+    <div class="servicio-botones">
+      <button type="button" class="btn-info" onclick="abrirInfo('Radiografía AP o PA')">Ver más información</button>
+      <a href="citas.html" class="btn-cita">Solicitar estudio</a>
+      <a href="https://wa.me/50431480676?text=Hola%20quiero%20solicitar%20el%20servicio%20de%20Radiografía%20AP%20o%20PA" target="_blank" class="btn-whatsapp">
+        <i class="fab fa-whatsapp"></i> Solicitar por WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <!-- Radiografía Senos Maxilares -->
+  <div class="servicio-card" data-aos="fade-up" data-aos-delay="300">
+    <img src="assets/img/pa.jpeg" alt="Radiografía Senos Maxilares">
+    <h3>Radiografía Senos Maxilares</h3>
+    <p>Permite evaluar los senos maxilares y estructuras adyacentes para diagnósticos precisos.</p>
+    <div class="servicio-botones">
+      <button type="button" class="btn-info" onclick="abrirInfo('Radiografía Senos Maxilares')">Ver más información</button>
+      <a href="citas.html" class="btn-cita">Solicitar estudio</a>
+      <a href="https://wa.me/50431480676?text=Hola%20quiero%20solicitar%20el%20servicio%20de%20Radiografía%20Senos%20Maxilares" target="_blank" class="btn-whatsapp">
+        <i class="fab fa-whatsapp"></i> Solicitar por WhatsApp
+      </a>
+    </div>
+  </div>
+   <!-- Radiografía de Mano -->
+<div class="servicio-card" data-aos="fade-up" data-aos-delay="310">
+  <img src="assets/img/mano1.jpeg" alt="Radiografía de Mano">
+  <h3>Radiografía de Mano</h3>
+  <p>Permite evaluar huesos, articulaciones y tejidos blandos de la mano para diagnósticos precisos.</p>
+  <div class="servicio-botones">
+    <button type="button" class="btn-info" onclick="abrirInfo('Radiografía de Mano')">Ver más información</button>
+    <a href="citas.html" class="btn-cita">Solicitar estudio</a>
+    <a href="https://wa.me/50431480676?text=Hola%20quiero%20solicitar%20el%20servicio%20de%20Radiografía%20de%20Mano" target="_blank" class="btn-whatsapp">
+      <i class="fab fa-whatsapp"></i> Solicitar por WhatsApp
+    </a>
+  </div>
+</div>
+
+  <!-- Tomografía Maxilar -->
+  <div class="servicio-card" data-aos="fade-up" data-aos-delay="350">
+    <img src="assets/img/maxilar.jpeg" alt="Tomografía Maxilar">
+    <h3>Tomografía Maxilar</h3>
+    <p>Imágenes tridimensionales del maxilar para diagnósticos precisos y planificación dental.</p>
+    <div class="servicio-botones">
+      <button type="button" class="btn-info" onclick="abrirInfo('Tomografia Maxilar')">Ver más información</button>
+      <a href="citas.html" class="btn-cita">Solicitar estudio</a>
+      <a href="https://wa.me/50431480676?text=Hola%20quiero%20solicitar%20el%20servicio%20de%20Tomografía%20Maxilar" target="_blank" class="btn-whatsapp">
+        <i class="fab fa-whatsapp"></i> Solicitar por WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <!-- Tomografía Mandibular -->
+  <div class="servicio-card" data-aos="fade-up" data-aos-delay="400">
+    <img src="assets/img/mandibular4.jpeg" alt="Tomografía Mandibular">
+    <h3>Tomografía Mandibular</h3>
+    <p>Estudio avanzado del área mandibular para planificaciones quirúrgicas y ortodónticas.</p>
+    <div class="servicio-botones">
+      <button type="button" class="btn-info" onclick="abrirInfo('Tomografia Mandibular')">Ver más información</button>
+      <a href="citas.html" class="btn-cita">Solicitar estudio</a>
+      <a href="https://wa.me/50431480676?text=Hola%20quiero%20solicitar%20el%20servicio%20de%20Tomografía%20Mandibular" target="_blank" class="btn-whatsapp">
+        <i class="fab fa-whatsapp"></i> Solicitar por WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <!-- Tomografía Bi Maxilar -->
+  <div class="servicio-card" data-aos="fade-up" data-aos-delay="450">
+    <img src="assets/img/bimaxilar4.jpeg" alt="Tomografía Bi Maxilar">
+    <h3>Tomografía Bi Maxilar</h3>
+    <p>Evaluación completa de maxilares para diagnóstico integral y planificación de tratamientos.</p>
+    <div class="servicio-botones">
+      <button type="button" class="btn-info" onclick="abrirInfo('Tomografia Bi Maxilar')">Ver más información</button>
+      <a href="citas.html" class="btn-cita">Solicitar estudio</a>
+      <a href="https://wa.me/50431480676?text=Hola%20quiero%20solicitar%20el%20servicio%20de%20Tomografía%20Bi%20Maxilar" target="_blank" class="btn-whatsapp">
+        <i class="fab fa-whatsapp"></i> Solicitar por WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <!-- Tomografía Volúmenes extendidos -->
+  <div class="servicio-card" data-aos="fade-up" data-aos-delay="500">
+    <img src="assets/img/volumetrica.jpeg" alt="Tomografía Volúmenes extendidos">
+    <h3>Tomografía Volúmenes extendidos</h3>
+    <p>Permite capturar zonas extensas para estudios maxilofaciales completos.</p>
+    <div class="servicio-botones">
+      <button type="button" class="btn-info" onclick="abrirInfo('Tomografia Volumenes extendidos')">Ver más información</button>
+      <a href="citas.html" class="btn-cita">Solicitar estudio</a>
+      <a href="https://wa.me/50431480676?text=Hola%20quiero%20solicitar%20el%20servicio%20de%20Tomografía%20Volúmenes%20extendidos" target="_blank" class="btn-whatsapp">
+        <i class="fab fa-whatsapp"></i> Solicitar por WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <!-- Zona 3 Piezas -->
+  <div class="servicio-card" data-aos="fade-up" data-aos-delay="550">
+    <img src="assets/img/zona 3 piezas.jpeg" alt="Zona 3 Piezas">
+    <h3>Zona 3 Piezas</h3>
+    <p>Evaluación específica de 3 piezas dentales para diagnósticos detallados.</p>
+    <div class="servicio-botones">
+      <button type="button" class="btn-info" onclick="abrirInfo('Zona 3 Piezas')">Ver más información</button>
+      <a href="citas.html" class="btn-cita">Solicitar estudio</a>
+      <a href="https://wa.me/50431480676?text=Hola%20quiero%20solicitar%20el%20servicio%20de%20Zona%203%20Piezas" target="_blank" class="btn-whatsapp">
+        <i class="fab fa-whatsapp"></i> Solicitar por WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <!-- Tomografía Senos Maxilares -->
+  <div class="servicio-card" data-aos="fade-up" data-aos-delay="600">
+    <img src="assets/img/tc senos.jpeg" alt="Tomografía Senos Maxilares">
+    <h3>Tomografía Senos Maxilares</h3>
+    <p>Imágenes detalladas de los senos maxilares para diagnósticos precisos.</p>
+    <div class="servicio-botones">
+      <button type="button" class="btn-info" onclick="abrirInfo('Tomografia Senos Maxilares')">Ver más información</button>
+      <a href="citas.html" class="btn-cita">Solicitar estudio</a>
+      <a href="https://wa.me/50431480676?text=Hola%20quiero%20solicitar%20el%20servicio%20de%20Tomografía%20Senos%20Maxilares" target="_blank" class="btn-whatsapp">
+        <i class="fab fa-whatsapp"></i> Solicitar por WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <!-- Tomografía A.T.M -->
+  <div class="servicio-card" data-aos="fade-up" data-aos-delay="650">
+    <img src="assets/img/tc atm (2).png" alt="Tomografía A.T.M">
+    <h3>Tomografía A.T.M</h3>
+    <p>Evaluación detallada de la articulación temporomandibular para diagnósticos precisos.</p>
+    <div class="servicio-botones">
+      <button type="button" class="btn-info" onclick="abrirInfo('Tomografia A.T.M')">Ver más información</button>
+      <a href="citas.html" class="btn-cita">Solicitar estudio</a>
+      <a href="https://wa.me/50431480676?text=Hola%20quiero%20solicitar%20el%20servicio%20de%20Tomografía%20A.T.M" target="_blank" class="btn-whatsapp">
+        <i class="fab fa-whatsapp"></i> Solicitar por WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <!-- Cefalometría -->
+  <div class="servicio-card" data-aos="fade-up" data-aos-delay="700">
+    <img src="assets/img/cefalometria2.jpeg" alt="Cefalometría">
+    <h3>Cefalometría</h3>
+    <p>Estudio especializado para planificación ortodóntica y análisis craneofacial.</p>
+    <div class="servicio-botones">
+      <button type="button" class="btn-info" onclick="abrirInfo('Cefalometria')">Ver más información</button>
+      <a href="citas.html" class="btn-cita">Solicitar estudio</a>
+      <a href="https://wa.me/50431480676?text=Hola%20quiero%20solicitar%20el%20servicio%20de%20Cefalometría" target="_blank" class="btn-whatsapp">
+        <i class="fab fa-whatsapp"></i> Solicitar por WhatsApp
+      </a>
+    </div>
+  </div>
+
+</div>
+</section>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <div class="container footer-content" data-aos="fade-up">
+      <div class="footer-logo-contact">
+        <img src="assets/img/logo2.png" alt="Logo Imadigital" class="footer-logo">
+        <div class="contact-info">
+          <p>Dirección: Barrio Concepción Ocotepeque, 4ta calle 3ra Avenida</p>
+          <p>Teléfono: <a href="tel:+50431480676">+504 3148-0676</a> | Correo: <a href="mailto:imadigitalpanoramic3d@gmail.com">imadigitalpanoramic3d@gmail.com</a></p>
+          <p>Horario: Lunes a Viernes 8:00am - 5:00pm | Sábado 8:00am - 12:00md</p>
+        </div>
+      </div>
+
+         <div class="footer-social">
+    <a href="#" target="_blank" rel="noopener" aria-label="Facebook" class="social-link">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="#" target="_blank" rel="noopener" aria-label="Instagram" class="social-link">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="#" target="_blank" rel="noopener" aria-label="WhatsApp" class="social-link">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="#" target="_blank" rel="noopener" aria-label="TikTok" class="social-link">
+      <i class="fab fa-tiktok"></i>
+    </a>
+</div>
+
+
+      <p class="footer-copy">&copy; 2026 Imadigital Panoramic 3D. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1200, once: true });
+  </script>
+
+  <a href="https://wa.me/50431480676" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+<div id="modalInfo" class="modal-info">
+  <div class="modal-contenido">
+    <h2 id="tituloInfo"></h2>
+    <p id="textoInfo"></p>
+  </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+  function abrirInfo(tipo) {
+    let titulo = "";
+    let texto = "";
+
+    /* ===== Radiografías ===== */
+    if (tipo === "Radiografía Panoramica") {
+      titulo = "Radiografía Panorámica";
+      texto = "Imagen amplia de toda la dentadura y maxilares en una sola exposición. Permite detectar caries, dientes retenidos, fracturas y patologías óseas.";
+    }
+    if (tipo === "Radiografía Lateral") {
+      titulo = "Radiografía Lateral";
+      texto = "Muestra el cráneo de perfil, útil para evaluar la relación entre maxilar y mandíbula. Usada en ortodoncia.";
+    }
+    if (tipo === "Radiografía A.T.M") {
+      titulo = "Radiografía A.T.M";
+      texto = "Imagen de la articulación temporomandibular para diagnosticar problemas articulares o dolor mandibular.";
+    }
+    if (tipo === "Radiografía AP o PA") {
+      titulo = "Radiografía AP o PA";
+      texto = "Proyección anteroposterior o posteroanterior del cráneo para evaluar simetría facial y senos paranasales.";
+    }
+    if (tipo === "Radiografía Senos Maxilares") {
+      titulo = "Radiografía Senos Maxilares";
+      texto = "Permite examinar los senos maxilares para detectar inflamaciones, infecciones o anomalías óseas.";
+    }
+    /* Radiografía de Mano */
+    if (tipo === "Radiografía de Mano") {
+    titulo = "Radiografía de Mano";
+    texto = "Estudio radiológico que muestra con claridad los huesos y articulaciones de la mano. Ideal para diagnosticar fracturas, lesiones articulares, deformidades o seguimiento post-quirúrgico.";
+    }
+
+    /* ===== Tomografías ===== */
+    if (tipo === "Tomografia Maxilar") {
+      titulo = "Tomografía Maxilar";
+      texto = "Imágenes 3D detalladas del maxilar superior para planificación de implantes y evaluación de patologías óseas.";
+    }
+    if (tipo === "Tomografia Mandibular") {
+      titulo = "Tomografía Mandibular";
+      texto = "Visualización tridimensional de la mandíbula para diagnóstico de fracturas, quistes y preparación quirúrgica.";
+    }
+    if (tipo === "Tomografia Bi Maxilar") {
+      titulo = "Tomografía Bi Maxilar";
+      texto = "Estudio completo de maxilar superior e inferior, útil en casos complejos de ortodoncia y cirugía maxilofacial.";
+    }
+    if (tipo === "Tomografia Volumenes extendidos") {
+      titulo = "Tomografía de Volúmenes Extendidos";
+      texto = "Captura áreas más grandes del cráneo y maxilares para una evaluación integral de toda la región maxilofacial.";
+    }
+    if (tipo === "Zona 3 Piezas") {
+      titulo = "Tomografía Zona 3 Piezas";
+      texto = "Tomografía específica de tres piezas dentales, ideal para implantes o endodoncia compleja.";
+    }
+    if (tipo === "Tomografia Senos Maxilares") {
+      titulo = "Tomografía Senos Maxilares";
+      texto = "Imágenes 3D detalladas de los senos maxilares para diagnóstico de sinusitis, quistes o lesiones óseas.";
+    }
+    if (tipo === "Tomografia A.T.M") {
+      titulo = "Tomografía A.T.M";
+      texto = "Tomografía especializada de la articulación temporomandibular para diagnóstico avanzado de desplazamientos o degeneración ósea.";
+    }
+
+    /* ===== Otros Estudios ===== */
+    if (tipo === "Cefalometria") {
+      titulo = "Cefalometría";
+      texto = "Radiografía lateral especializada para medir ángulos y proporciones craneofaciales. Usada en ortodoncia y cirugía maxilofacial.";
+    }
+
+    /* ===== Mostrar en el modal ===== */
+    document.getElementById("tituloInfo").innerText = titulo;
+    document.getElementById("textoInfo").innerText = texto;
+    document.getElementById("modalInfo").classList.add("active");
+  }
+
+  /* HACER LA FUNCIÓN GLOBAL */
+  window.abrirInfo = abrirInfo;
+
+  /* CERRAR SOLO AL HACER CLICK FUERA */
+  document.getElementById("modalInfo").addEventListener("click", function(e){
+      if(e.target === this){
+          this.classList.remove("active");
+      }
+  });
+
+});
+</script>
+<script>
+// Menu responsive con cierre al hacer clic fuera o al seleccionar un enlace
+const toggle = document.getElementById("menu-toggle");
+const menu = document.getElementById("nav-menu");
+
+if (toggle && menu) {
+  // Alterna el menú al tocar la hamburguesa
+  toggle.addEventListener("click", () => {
+    menu.classList.toggle("show");
+  });
+
+  // Cierra el menú si se hace clic fuera del menú o del botón
+  document.addEventListener("click", (e) => {
+    if (!menu.contains(e.target) && !toggle.contains(e.target)) {
+      menu.classList.remove("show");
+    }
+  });
+
+  // Cierra el menú al hacer clic en cualquier enlace del menú
+  menu.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      menu.classList.remove("show");
+    });
+  });
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agendar Cita - Imadigital Panoramic 3D</title>
+
+  <!-- Iconos Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <!-- CSS general -->
+  <link rel="stylesheet" href="assets/css/styless.css">
+  <!-- CSS citas -->
+  <link rel="stylesheet" href="assets/css/citas.css">
+  <!-- AOS animaciones -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body class="pagina-citas">
+
+  <!-- HEADER -->
+  <header class="main-header">
+    <div class="container header-content">
+      <a href="index.html" class="logo-link">
+        <img src="assets/img/logo.png" alt="Logo Imadigital" class="logo">
+      </a>
+      <nav class="nav">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="acerca.html">Acerca de</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="citas.html" class="active">Citas</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+     <h1 data-aos="fade-down">Agenda tu cita</h1>
+    <p class="hero-subtitulo" data-aos="fade-up">
+    Completa el formulario para solicitar tu estudio radiológico. Nuestro equipo confirmará tu cita lo antes posible.
+    </p>
+  </div>
+  </section>
+
+  <!-- FORMULARIO DE CITAS -->
+  <section class="citas">
+    <div class="container">
+      <h2 data-aos="fade-down">Formulario de Citas</h2>
+
+      <!-- Mensaje de confirmación oculto por defecto -->
+      <div class="cita-confirmacion" id="cita-confirmacion" style="display:none; flex-direction: column; align-items: center; text-align: center; gap: 15px; padding: 20px; background: #d4edda; color: #155724; border-radius: 10px; font-size: 1.2rem;">
+        <i class="fa-solid fa-circle-check" style="font-size: 3rem;"></i>
+        <p>¡Gracias, <span id="nombre-confirmacion"></span>! Tu cita ha sido enviada correctamente para el <span id="fecha-confirmacion"></span> a las <span id="hora-confirmacion"></span>. Revisa tu correo para confirmar la cita.</p>
+      </div>
+
+      <!-- Formulario -->
+      <form class="cita-form" id="formCita" data-aos="fade-up">
+        <div class="form-group">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+        </div>
+
+        <div class="form-group">
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="+504 0000-0000" required>
+        </div>
+
+        <div class="form-group">
+  <label for="servicio">Estudio solicitado</label>
+  <select id="servicio" name="servicio" required>
+    <option value="">Seleccione un Estudio</option>
+<optgroup label="Radiografías">
+    <option value="Radiografía Panoramica">Radiografía Panoramica</option>
+    <option value="Radiografía Lateral">Radiografía Lateral</option>
+    <option value="Radiografía A.T.M">Radiografía A.T.M</option>
+    <option value="Radiografía AP o PA">Radiografía AP o PA</option>
+    <option value="Radiografía Senos Maxilares">Radiografía Senos Maxilares</option>
+</optgroup>
+<optgroup label="Tomografías">
+    <option value="Tomografia Maxilar">Tomografia Maxilar</option>
+    <option value="Tomografia Mandibular">Tomografia Mandibular</option>
+    <option value="Tomografia Bi Maxilar">Tomografia Bi Maxilar</option>
+    <option value="Tomografia Volumenes extendidos">Tomografia Volumenes extendidos</option>
+    <option value="Zona 3 Piezas">Zona 3 Piezas</option>
+    <option value="Tomografia Senos Maxilares">Tomografia Senos Maxilares</option>
+    <option value="Tomografia A.T.M">Tomografia A.T.M</option>
+</optgroup>
+<optgroup label="Otros Estudios">
+    <option value="Cefalometria">Cefalometria</option>
+    </optgroup>
+  </select>
+</div>
+     
+
+        <div class="form-group">
+          <label for="fecha">Fecha de la cita</label>
+          <input type="date" id="fecha" name="fecha" required>
+        </div>
+
+        <div class="form-group">
+          <label for="hora">Hora de la cita</label>
+          <input type="time" id="hora" name="hora" required>
+        </div>
+
+        <div class="form-group">
+          <label for="mensaje">Mensaje adicional</label>
+          <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe cualquier detalle adicional..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary">
+          <i class="fa-solid fa-calendar-check"></i> Agendar Cita
+</button></form>
+    </div>
+  </section>
+
+  
+  <!-- FOOTER -->
+<footer class="main-footer">
+  <div class="container footer-content" data-aos="fade-up">
+    
+    <div class="footer-logo-contact">
+      <img src="assets/img/logo2.png" alt="Logo Imadigital" class="footer-logo" />
+      <div class="contact-info">
+        <p>Dirección: Barrio Concepción Ocotepeque, 4ta calle 3ra Avenida</p>
+        <p>Teléfono: <a href="tel:+50431480676">+504 3148-0676</a> | Correo: <a href="mailto:imadigitalpanoramic3d@gmail.com">imadigitalpanoramic3d@gmail.com</a></p>
+        <p>Horario: Lunes a Viernes 8:00am - 5:00pm</p>
+        <p>Sábado 8:00am - 12:00md</p>
+      </div>
+    </div>
+
+    <div class="footer-social">
+      <a href="https://www.facebook.com/share/1CVrh5shRa/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook" class="social-link">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.instagram.com/imadigitalpanoramic3d?igsh=MTFscjV4eGV2ajJtcg==" target="_blank" rel="noopener" aria-label="Instagram" class="social-link">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://wa.me/50431480676" target="_blank" rel="noopener" aria-label="WhatsApp" class="social-link">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="https://www.tiktok.com/@imadigitalpanoramic3d?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener" aria-label="TikTok" class="social-link">
+        <i class="fab fa-tiktok"></i>
+      </a>
+    </div>
+
+    <p class="footer-copy">&copy; 2026 Imadigital Panoramic 3D. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+
+
+
+  <!-- WhatsApp flotante -->
+  <a href="https://wa.me/50431480676" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1200, once: true });
+  </script>
+
+  <script>
+    const form = document.getElementById('formCita');
+    const confirmacion = document.getElementById('cita-confirmacion');
+    const nombreConf = document.getElementById('nombre-confirmacion');
+    const fechaConf = document.getElementById('fecha-confirmacion');
+    const horaConf = document.getElementById('hora-confirmacion');
+
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+
+      const datos = {
+        nombre: form.nombre.value,
+        correo: form.correo.value,
+        telefono: form.telefono.value,
+        estudio: form.servicio.value,
+        fecha: form.fecha.value,
+        hora: form.hora.value,
+        mensaje: form.mensaje.value
+      };
+        //url que actua como backend
+      fetch("https://script.google.com/macros/s/AKfycbxmzu_Xf-nJ9ZHX4YCSyrDZyom_HMKebXXmVohxxLn5TqJJ_OsJOYzMNr4fqGmrh3DV/exec", {
+        method: "POST",//metodo post
+
+        //formato Json
+        body: JSON.stringify(datos),
+        headers: { "Content-Type": "application/json" },
+        mode: "no-cors"
+      })
+      .then(() => {
+        nombreConf.textContent = datos.nombre;
+        fechaConf.textContent = datos.fecha;
+        horaConf.textContent = datos.hora;
+
+        form.style.display = 'none';
+        confirmacion.style.display = 'flex';
+        form.reset();
+      })
+      .catch(err => {
+        console.log(err);
+        alert("Oops! Hubo un problema al enviar tu cita.");
+      });
+    });
+    
+  </script>
+
+  <script>
+// Menu responsive con cierre al hacer clic fuera o al seleccionar un enlace
+const toggle = document.getElementById("menu-toggle");
+const menu = document.getElementById("nav-menu");
+
+if (toggle && menu) {
+  // Alterna el menú al tocar la hamburguesa
+  toggle.addEventListener("click", () => {
+    menu.classList.toggle("show");
+  });
+
+  // Cierra el menú si se hace clic fuera del menú o del botón
+  document.addEventListener("click", (e) => {
+    if (!menu.contains(e.target) && !toggle.contains(e.target)) {
+      menu.classList.remove("show");
+    }
+  });
+
+  // Cierra el menú al hacer clic en cualquier enlace del menú
+  menu.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      menu.classList.remove("show");
+    });
+  });
+}
+</script>
+</body>
+</html>
+</body>
+</html>

@@ -1,0 +1,49 @@
+/* ===== ACERCA DE ===== */
+.acerca-sobre h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.acerca-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.acerca-text {
+    flex: 1 1 400px;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555;
+}
+
+.acerca-img {
+    flex: 1 1 400px;
+}
+
+.acerca-img img {
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    .acerca-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .acerca-text, .acerca-img {
+        flex: 1 1 100%;
+    }
+
+    .acerca-sobre h2 {
+        font-size: 2rem;
+    }
+}
